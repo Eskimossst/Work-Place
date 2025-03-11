@@ -28,3 +28,24 @@ console.log(typeof sume)
 copyResult.onclick = function () {
     console.log('Hello Click!')
 }
+
+// let name = "Henrikki"
+// let age = " 29.11.1999"
+// let words = " fly"
+// let agree = name + age + words
+
+// console.log (agree)
+
+const array = [1, 2, 3]
+
+console.log (array)
+
+const inputElement = document.getElementById ('names')
+const createBtn = document.getElementById ('agree')
+const listElement = document.getElementById ('list-some')
+
+// console.log (inputElement.value)
+
+createBtn.onclick = function () {
+    listElement.innerHTML = inputElement.value
+}
