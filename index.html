@@ -3,7 +3,7 @@
     <title> Constantine Rocosovski</title>
     <meta charset="UTF-8"/>
     <link href="Style.css" rel="Stylesheet"/>
-    <script src="app.js" defer></script>
+    <script defer src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
         integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
         crossorigin="anonymous"
@@ -74,9 +74,9 @@
                             <label for="words">Words</label>
                             <textarea name="words" placeholder="Words more..." rows="5" cols="28" id="words"></textarea>
                         </div>
-                        <div class="form-group">    
-                            <label for="list-some">Account</label>
-                            <textarea name="list-some" id="list-some"></textarea>
+                        <div class="form-group" id="div">
+                            <label for="list-some">Account</label> 
+                            <textarea name="list-some" id="list-some"></textarea> 
                         </div>
                         <div class="form-group">   
                             <label for="agree"> Agree </label>
@@ -278,13 +278,17 @@
                 document.getElementById("result").value = "" 
             }
 
-            createBtn.onclick = function () {
+            /*createBtn.onclick = function () {
                 myFunction()
             }
             
             function myFunction () {
                 document.getElementById("list-some").value = "Hey!";
             }
+            */
+
+            var elementSecond = document.createElement('list-some')
+            div.insertAdjacentElement("beforeend",elementSecond);
         </script>
     </div>
     <div style="margin-bottom: 500px;"> </div>
