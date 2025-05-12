@@ -44,12 +44,12 @@ const inputElement = document.getElementById ('names')
 const inputElementAge = document.getElementById ('age')
 const createBtn = document.getElementById ('agree')
 const listElement = document.getElementById ('list-some')
-const listElementSecond = document.querySelector ('list-some')
+// const listElementSecond = document.querySelector ('list-some')
+const afterBtn = document.getElementById ('agree')
 
 // console.log (inputElement.value)
 
 createBtn.onclick = function () {
     listElement.innerHTML = inputElement.value 
-
-    listElement.insertAdjacentElement('beforeend','listElementSecond')
+    // listElement.insertAdjacentElement('beforeend','listElement')
 }
